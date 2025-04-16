@@ -1,0 +1,23 @@
+<html>
+    <body><h1>JavaScript Array</h1>
+    <p>Click the buttons to arrange the value in certain orders</p>
+    <button onclick="Ascending()">Ascending Order</button>
+    <button onclick="Decending()">Decending Order</button>
+    <p id="result"></p>
+    <script>
+        var point =[23,45,50,60,46,24,10,100,420]
+        document.getElementById("result").innerHTML=point;
+        function Ascending(){
+            point.sort(function(a,b) 
+        {return a-b});
+        document.getElementById("result").innerHTML=point;
+         }
+
+         function Decending(){
+            point.sort(function(a,b) 
+        {return b-a});
+        document.getElementById("result").innerHTML=point;
+         }
+    </script>
+    </body>
+</html>
